@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+~   Copyright (c) WSO2 Inc. (http://wso2.com) All Rights Reserved.
+~
+~   Licensed under the Apache License, Version 2.0 (the "License");
+~   you may not use this file except in compliance with the License.
+~   You may obtain a copy of the License at
+~
+~        http://www.apache.org/licenses/LICENSE-2.0
+~
+~   Unless required by applicable law or agreed to in writing, software
+~   distributed under the License is distributed on an "AS IS" BASIS,
+~   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~   See the License for the specific language governing permissions and
+~   limitations under the License.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>WSO2 Stream Processor</title>
+    <link href="images/favicon.png" rel="icon" type="image/png" sizes="16x16" />
+    <!-- WSO2 Theme -->
+    <link href="css/theme-wso2.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Font WSO2 CSS -->
+    <link href="libs/font-wso2-1.2.2/css/font-wso2.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+    <link href=css/theme-ie.min.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="sticky-footer">
+    
+    <div class="sidebar-wrapper sidebar-nav toggled" id="left-sidebar"  data-side="left" data-width="250" data-offset-left="55">
+      
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#single" aria-controls="single" role="tab" data-toggle="tab">Single</a></li>
+        <li role="presentation"><a href="#feed" aria-controls="feed" role="tab" data-toggle="tab">Feed</a></li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="single">
+          <div class="content">
+            <h3>Single Simulation</h3>
+            <ul id="subTabNav" class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#single1" aria-controls="single" role="tab" data-toggle="tab">S</a></li>
+              <li id="addSubTab" class="add-sub-tab" role="presentation"><a>+</a></li>
+            </ul>
+            <div id="subTab" class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="single1">
+                <div class="content">
+                  Content details
+                
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="feed">
+          
+          <div class="content">
+            <h3>Feed Simulation</h3>
+            
+            <button type="button" class="btn btn-primary btn-stack btn-block" data-toggle="sidebar" data-target="#left-sidebar-sub" aria-expanded="false" rel="createPage">
+            <span class="icon fw-stack fw-lg">
+              <i class="fw fw-circle-outline fw-stack-2x"></i>
+              <i class="fw fw-add fw-stack-1x"></i>
+            </span> Creat </button>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- .left-sidebar-sub -->
+        <div class="sidebar-wrapper sidebar-nav sidebar-nav-sub" id="left-sidebar-sub" data-side="left" data-width="250" data-offset-left="350">
+            <div class="nano">
+                <div class="nano-content">
+                    
+                    <button class="btn btn-default close-handle" data-handle="close" data-toggle="sidebar" data-target="#left-sidebar-sub" aria-expanded="true" rel="createPage"><i class="fw fw-cancel"></i></button>
+                    
+                    <div class="add-padding-3x">
+                        
+                      
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+    <script src="libs/jquery_1.11.0/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme-wso2.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

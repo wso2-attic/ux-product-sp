@@ -18,14 +18,14 @@
 
 ul li, 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 a:hover, 
 a:focus {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .initial-background-container {
@@ -55,31 +55,31 @@ a:focus {
 .new-welcome-button, 
 .open-welcome-button {
 	color: #f1f6fa;
-    font-size: 1.286em;
-    width: 200px;
-    margin: 0 auto;
-    transition: color 250ms ease 0s;
+	font-size: 1.286em;
+	width: 200px;
+	margin: 0 auto;
+	transition: color 250ms ease 0s;
 }
 
 .new-welcome-button {
-    background-color: #f17b31;
-    margin-bottom: 25px;
+	background-color: #f17b31;
+	margin-bottom: 25px;
 }
 
 .new-welcome-button:hover, 
 .new-welcome-button:active {
-    background-color: #f17b31;
-    color: #333;
+	background-color: #f17b31;
+	color: #333;
 }
 
 .open-welcome-button {
-    background-color: #505050;
+	background-color: #505050;
 }
 
 .open-welcome-button:hover, 
 .open-welcome-button:active {
-    background-color: #505050;
-    color: #000;
+	background-color: #505050;
+	color: #000;
 }
 
 .productname-wrap {
@@ -106,13 +106,13 @@ a:focus {
 	margin: 5px 0;
 	cursor: pointer;
 	-webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    line-height: 21px;
-    display: block;
-    color: #f6f6f6;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	line-height: 21px;
+	display: block;
+	color: #f6f6f6;
 }
 
 .recent-files ul li button {
@@ -129,7 +129,7 @@ a:focus {
 .recent-files ul li a:hover,
 .samples ul li a:hover {
 	font-size: 1.286em;
-  	background: #424242;
+	background: #424242;
 }
 
 .margin-top-60 {
@@ -142,8 +142,8 @@ a:focus {
 	font-size: 14px;
 	color: #c8c7c7;
 	overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .quick-links ul {

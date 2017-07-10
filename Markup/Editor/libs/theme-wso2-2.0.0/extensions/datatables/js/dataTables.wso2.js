@@ -294,17 +294,11 @@
                 return;
             }
 
-//            if ( $(settings.nTable).hasClass('dte') ||
-//                 $(settings.nTable).hasClass('dt-extended') ||
-//                 settings.oInit.wso2 ||
-//                 DataTable.defaults.wso2 ||
-//            ) {
                 var init = settings.oInit.wso2;
 
                 if (init !== false) {
                     new wso2Extend (settings, $.isPlainObject(init) ? init : {});
                 }
-            //}
         });
         
         return wso2Extend;

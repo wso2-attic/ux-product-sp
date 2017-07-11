@@ -16,13 +16,13 @@
 
 $(function() {
 
-$('#addSubTab').click(function(){
+$('#add-sub-tab').click(function(){
     var addBtn  = $(this);
-    var elLength = $( "ul#subTabNav li" ).length ;
+    var elLength = $( "ul#sub-tab-nav li" ).length ;
     addBtn.siblings().removeClass("active");
     $("<li class='active' role='presentation'><a href='#single"+elLength+"' aria-controls='single' role='tab' data-toggle='tab'>S <button type='button' class='close' aria-label='Close'><span aria-hidden='true'>×</span></button></a></li>").insertBefore(addBtn);
-    $("#subTab").find(".tab-pane").removeClass("active");
-    $("#subTab").append("<div role='tabpanel' class='tab-pane active' id='single"+elLength+"'><div class='content'>detail "+elLength+"</div></div>")
+    $("#sub-tab").find(".tab-pane").removeClass("active");
+    $("#sub-tab").append("<div role='tabpanel' class='tab-pane active' id='single"+elLength+"'><div class='content'>detail "+elLength+"</div></div>")
 })
 
 $("ul.nav-tabs").on( "click", 'li[role="presentation"] button.close', function(){
@@ -30,14 +30,14 @@ $("ul.nav-tabs").on( "click", 'li[role="presentation"] button.close', function()
     var x = closeBtn.parents("a").attr("href");
 
     closeBtn.parents('li').prev().addClass('active');
-    $('#subTab ' + x).prev().addClass('active');
+    $('#sub-tab ' + x).prev().addClass('active');
 
-    $('#subTab ' + x).remove();
+    $('#sub-tab ' + x).remove();
     closeBtn.parents("li").remove();
     
 })
 
- $(".nano").nanoScroller();
+$(".nano").nanoScroller();
 
 });
 

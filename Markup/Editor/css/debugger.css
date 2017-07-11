@@ -40,20 +40,20 @@ a:focus {
 	font-size: 20px;
 }
 
-.debugger-toolbar span.appName {
+.debugger-toolbar span.app-name {
 	padding-right: 25px;
 	color: #d6d6d6;
 }
 
 .panel-state-body {
-    background-color: #252525;
-    border: 3px solid rgba(0, 0, 0, 0.15);
-    height: 200px;
-    min-height: 200px;
+	background-color: #252525;
+	border: 3px solid rgba(0, 0, 0, 0.15);
+	height: 200px;
+	min-height: 200px;
 }
 
 .console-container {
-    background: #131313;
-    color: #fff;
-    padding-bottom: 15px;
+	background: #131313;
+	color: #fff;
+	padding-bottom: 15px;
 }

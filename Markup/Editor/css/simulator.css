@@ -93,7 +93,7 @@ a:focus {
 }
 
 .close-handle {
-    background: #3d464f none repeat scroll 0 0;
+    background: #3d464f;
     border: none;
     color: #d6dde5;
     font-size: 10px;
@@ -148,4 +148,40 @@ a:focus {
     background: #4f4f4f;
     z-index: 1000000;
     overflow: visible;
+}
+
+.simulation-list {
+    margin-top: 40px;
+}
+
+.dropdown-menu {
+    background: #333;
+}
+
+.sidebar-nav li a, 
+.sidebar-nav li a:focus {
+    background: none;
+}
+
+.simulator-tools a {
+    padding: 0 3px;
+}
+
+.simulation-list .form-control,
+.simulation-list .btn-default {
+    background-color: #313840;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.simulation-list .btn-default:hover {
+    border-color: #555;
+}
+
+.simulation-list .simulation-name {
+    cursor: default;
+}
+
+.simulation-list .input-group {
+    margin: 10px 0;
 }

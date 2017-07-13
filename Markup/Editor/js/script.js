@@ -25,7 +25,7 @@ $('#add-sub-tab').click(function(){
     $("#sub-tab").append("<div role='tabpanel' class='tab-pane active' id='single"+elLength+"'><div class='content'>detail "+elLength+"</div></div>")
 })
 
-$("ul.nav-tabs").on( "click", 'li[role="presentation"] button.close', function(){
+$("ul.nav-tabs").on( "click", 'li button.close', function(){
     var closeBtn = $(this);
     var x = closeBtn.parents("a").attr("href");
 

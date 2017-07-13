@@ -16,28 +16,28 @@
 
 $(function() {
 
-$('#add-sub-tab').click(function(){
-    var addBtn  = $(this);
-    var elLength = $( "ul#sub-tab-nav li" ).length ;
-    addBtn.siblings().removeClass("active");
-    $("<li class='active' role='presentation'><a href='#single"+elLength+"' aria-controls='single' role='tab' data-toggle='tab'>S <button type='button' class='close' aria-label='Close'><span aria-hidden='true'>×</span></button></a></li>").insertBefore(addBtn);
-    $("#sub-tab").find(".tab-pane").removeClass("active");
-    $("#sub-tab").append("<div role='tabpanel' class='tab-pane active' id='single"+elLength+"'><div class='content'>detail "+elLength+"</div></div>")
-})
+    $('#add-sub-tab').click(function(){
+        var addBtn  = $(this);
+        var elLength = $( "ul#sub-tab-nav li" ).length ;
 
-$("ul.nav-tabs").on( "click", 'li button.close', function(){
-    var closeBtn = $(this);
-    var x = closeBtn.parents("a").attr("href");
+        addBtn.siblings().removeClass("active");
+        $("<li class='active' role='presentation'><a href='#single"+elLength+"' aria-controls='single' role='tab' data-toggle='tab'>S <button type='button' class='close' aria-label='Close'><span aria-hidden='true'>×</span></button></a></li>").insertBefore(addBtn);
+        $("#sub-tab").find(".tab-pane").removeClass("active");
+        $("#sub-tab").append("<div role='tabpanel' class='tab-pane active' id='single"+elLength+"'><div class='content'>detail "+elLength+"</div></div>")
+    })
 
-    closeBtn.parents('li').prev().addClass('active');
-    $('#sub-tab ' + x).prev().addClass('active');
+    $("ul.nav-tabs").on( "click", 'li button.close', function(){
+        var closeBtn = $(this);
+        var x = closeBtn.parents("a").attr("href");
 
-    $('#sub-tab ' + x).remove();
-    closeBtn.parents("li").remove();
-    
-})
+        closeBtn.parents('li').prev().addClass('active');
+        $('#sub-tab ' + x).prev().addClass('active');
+        $('#sub-tab ' + x).remove();
+        closeBtn.parents("li").remove();
+        
+    })
 
-$(".nano").nanoScroller();
+    $(".nano").nanoScroller();
 
 });
 
